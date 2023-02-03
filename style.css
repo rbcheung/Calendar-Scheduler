@@ -72,4 +72,13 @@ textarea {
 .container {
   margin: auto;
 }
+footer {
+  margin:50px
+}
 
+.hide {
+  display: none;
+}
+#local-storage-msg {
+  text-align: center;
+}

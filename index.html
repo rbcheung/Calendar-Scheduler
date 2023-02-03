@@ -26,59 +26,78 @@
     <header class="jumbotron">
 
       <!--TIME BLOCKS-->
-  
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container row">
-      <div class="time-block" id="1st-Hour"></div>
-      <div class="col-md-1 hour"> 9am</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
 
-      <div class="time-block" id="2nd-Hour"></div>
-      <div class="col-md-1 hour"> 10am</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+    <!-- Added Local Storage Msg here. Also added new class in css so it is centered-->
 
-      <div class="time-block" id="3rd-Hour"></div>
-      <div class="col-md-1 hour"> 11am</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="4th-Hour"></div>
-      <div class="col-md-1 hour"> 12pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="5th-Hour"></div>
-      <div class="col-md-1 hour"> 13pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="6th-Hour"></div>
-      <div class="col-md-1 hour"> 14pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="7th-Hour"></div>
-      <div class="col-md-1 hour"> 15pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="8th-Hour"></div>
-      <div class="col-md-1 hour"> 16pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-
-      <div class="time-block" id="8th-Hour"></div>
-      <div class="col-md-1 hour"> 17pm</div>
-      <textarea name="text-area1" id="" class="col-md-10 description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
-      
-
+    <div id="local-storage-msg" class="hide">
+      <p>Appointment added with <code>Local-Storage</code>✅</p>
     </div>
+
+    <div class="container">
+      <div class="time-block row" data-time="9">
+        <div class="col-md-1 hour"> 9am</div>
+        <textarea id="text-area1" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="10">
+      <div class="col-md-1 hour"> 10am</div>
+      <textarea name="text-area2" id="text-area2" class="col-md-10 description text-areas"></textarea>
+      <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="11">
+        <div class="col-md-1 hour"> 11am</div>
+        <textarea id="text-area3" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="12">
+        <div class="col-md-1 hour"> 12pm</div>
+        <textarea id="text-area4" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="13">
+        <div class="col-md-1 hour"> 13pm</div>
+        <textarea id="text-area5" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="14">
+        <div class="col-md-1 hour"> 14pm</div>
+        <textarea id="text-area6" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="15">
+        <div class="col-md-1 hour"> 15pm</div>
+        <textarea id="text-area7" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="16">
+        <div class="col-md-1 hour"> 16pm</div>
+        <textarea id="text-area8" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="time-block row" data-time="17">
+        <div class="col-md-1 hour"> 17pm</div>
+        <textarea id="text-area9" class="col-md-10 description text-areas"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+      
+    <!-- Added a blank footer and gave margin of 50px in the CSS styling to add some space between the last time block and the bottom of the page-->
+     <footer>
+      
+     </footer>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
