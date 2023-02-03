@@ -75,6 +75,14 @@ saveBtn.on("click", function (event) {
   localStorage.setItem("17", textAreaValue9);
 
   $("#local-storage-msg").removeClass("hide");
-
-   
 });
+
+textArea1.text(localStorage.getItem("9"));
+textArea2.text(localStorage.getItem("10"));
+textArea3.text(localStorage.getItem("11"));
+textArea4.text(localStorage.getItem("12"));
+textArea5.text(localStorage.getItem("13"));
+textArea6.text(localStorage.getItem("14"));
+textArea7.text(localStorage.getItem("15"));
+textArea8.text(localStorage.getItem("16"));
+textArea9.text(localStorage.getItem("17"));
