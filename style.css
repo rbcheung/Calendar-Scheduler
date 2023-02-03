@@ -75,10 +75,11 @@ textarea {
 footer {
   margin:50px
 }
-
+/* Hide selector added and connected to hide class in html div used for localStorage msg. display none to hide div by default. */
 .hide {
   display: none;
 }
+/* ID selector for local storage message used to center the msg in the middle of the website.s */
 #local-storage-msg {
   text-align: center;
 }

@@ -1,18 +1,20 @@
-// Current Time //
-var today = moment();
+// Variable for current time stored as today. 
+// moment() gives us the todays date and time. 
+// Grabbed the element that I want to amend and added .text to change text content and .format to change the format of today variable.
+var today = moment()
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
-// Current hour //
+// Variable for current hour. //
+// .hour on moment() gives us the current hour
 
 var currentHour = moment().hour();
-// console.log(currentHour);
 
-// Selected Time Rows //
+
+// Selected Time Rows to use later //
 
 var timeBlocks = $(".time-block");
-// console.log(timeBlocks);
 
-// Text Area selectors //
+// Selected Textareas to use later //
 
 var textArea1 = $("#text-area1");
 var textArea2 = $("#text-area2");
@@ -24,19 +26,22 @@ var textArea7 = $("#text-area7");
 var textArea8 = $("#text-area8");
 var textArea9 = $("#text-area9");
 
-// Selected All Save Buttons
+// Selected All Save Buttons //
 
 var saveBtn = $(".saveBtn");
-// console.log(saveBtn);
 
-// Selected Local Storage Message
+// Selected Local Storage Message //
 
 var localStorageDiv = $("#local-storage-msg");
 
 // Colour Coding Section //
+// for loop created to loop over timeBlocks variable.
+// If current hour is the same as iterated items data-time, add class of present which will give text area a red background.
+// If current hour is greater than iterated items data-time, add class of past which will give all text areas affected a grey background.
+// If current hour is smaller than iterated items data-time, add class of future which will give all text areas affected a green background.
 
 for (var i = 0; i < timeBlocks.length; i++) {
-  console.log(timeBlocks[i]);
+//   console.log(timeBlocks[i]);
   if (currentHour == timeBlocks[i].dataset.time) {
     // console.log("We are in the present")
     timeBlocks[i].classList.add("present");
@@ -50,6 +55,12 @@ for (var i = 0; i < timeBlocks.length; i++) {
     timeBlocks[i].classList.add("present");
   }
 }
+
+// Grabbed the saveBtn variable and created a click event.
+// Used event.preventDefualt added so that it is not refreshed when the button is clicked.
+// Grabbed the input values using .value() from textarea variables grabbed earlier on.
+// Used localStorage.setItem to store the values of each key.
+// Lastly, grabbed the localstorage msg div and removed the class hide. so that it will appear on saveBtn click.
 
 saveBtn.on("click", function (event) {
   event.preventDefault();
@@ -76,6 +87,8 @@ saveBtn.on("click", function (event) {
 
   $("#local-storage-msg").removeClass("hide");
 });
+
+// Used .text to change the textareas text to whatever value was stored in local storage for the keys in the .getItem parameters.
 
 textArea1.text(localStorage.getItem("9"));
 textArea2.text(localStorage.getItem("10"));
