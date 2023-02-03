@@ -25,5 +25,5 @@ In order for the application to be successful I had to achieve the following req
 
 ## Link to Deployed Website
 
-
+https://rbcheung.github.io/Daily-Planner-App/
 
