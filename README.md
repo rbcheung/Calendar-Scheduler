@@ -19,7 +19,7 @@ In order for the application to be successful I had to achieve the following req
 * Persist events between refreshes of a page.
 
 
-## Image of Portfolio Page
+## Image of Daily-Planner-App Website.
 
 ![Alt text](images/Daily-Planner-App.png)
 
