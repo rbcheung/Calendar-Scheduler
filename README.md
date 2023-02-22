@@ -1,4 +1,4 @@
-# Daily-Planner-App
+# Calendar-Scheduler
 
 ## My Task
 
@@ -19,7 +19,7 @@ In order for the application to be successful I had to achieve the following req
 * Persist events between refreshes of a page.
 
 
-## Image of Daily-Planner-App Website.
+## Image of Calendar-Scheduler Website.
 
 ![Alt text](images/Daily-Planner-App.png)
 
